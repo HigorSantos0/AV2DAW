@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sistema de Controle de Entregas</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Sistema de Controle de Entregas</h1>
+
+  <h2>Listar os Candidatos</h2>
+  <button onclick="listarCandidatos()">Listar Candidatos</button>
+  <table id="tabelaCandidatos"></table>
+
+  <h2>Incluindo Candidato</h2>
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome">
+  <label for="cpf">CPF:</label>
+  <input type="text" id="cpf">
+  <label for="identidade">Identidade:</label>
+  <input type="text" id="identidade">
+  <label for="email">Email:</label>
+  <input type="text" id="email">
+  <label for="cargo">Cargo Pretendido:</label>
+  <input type="text" id="cargo">
+  <label for="sala">Sala de Prova:</label>
+  <input type="text" id="sala">
+  <button onclick="incluirCandidato()">Incluir Candidato</button>
+
+  <h2>Incluindo Fiscal da Prova</h2>
+  <label for="fiscalNome">Nome:</label>
+  <input type="text" id="fiscalNome">
+  <label for="fiscalCPF">CPF:</label>
+  <input type="text" id="fiscalCPF">
+  <label for="fiscalSala">Sala de Prova:</label>
+  <input type="text" id="fiscalSala">
+  <button onclick="incluirFiscal()">Incluir Fiscal</button>
+
+  <h2>Alterando Sala da Prova de um Candidato</h2>
+  <label for="candidatoCPF">CPF do Candidato:</label>
+  <input type="text" id="candidatoCPF">
+  <label for="novaSala">Nova Sala de Prova:</label>
+  <input type="text" id="novaSala">
+  <button onclick="alterarSalaProva()">Alterar Sala de Prova</button>
+
+  <h2>Listar Fiscais</h2>
+  <button onclick="listarFiscais()">Listar Fiscais</button>
+  <table id="tabelaFiscais"></table>
+
+  <h2>Validar Candidato</h2>
+  <label for="validarCPF">CPF do Candidato:</label>
+  <input type="text" id="validarCPF">
+  <button onclick="validarCandidato()">Validar Candidato</button>
+</body>
+
+</html>
